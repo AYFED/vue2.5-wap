@@ -1,0 +1,57 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+html, body {
+  width: 100%;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 540px;
+  background: #F6F6F6;
+  font-size: 14px;
+  font-family: -apple-system, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  -webkit-text-size-adjust: 100% !important;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom)
+}
+
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
+}
+
+h4 {
+  margin: 20px 0 10px;
+}
+
+.demo-list {
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+
+  h4 {
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+}
+
+p {
+  font-size: 12px;
+  margin: 5px 10px;
+  color: #666;
+}

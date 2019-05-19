@@ -1,0 +1,49 @@
+.ayui-row{
+	&:after{
+		display: block;
+	    height: 0;
+	    clear: both;
+	    visibility: hidden;
+	    content: '';
+	}
+}
+.ayui-row-flex{
+	display: flex;
+	&:after{
+		display:none;
+	}
+	.ayui-col{
+		float: none;
+	}
+}
+.ayui-row-justify-center{
+	justify-content:center;
+}
+.ayui-row-justify-end{
+	justify-content:flex-end;
+}
+.ayui-row-justify-space-between{
+	justify-content:space-between;
+	align-items:center;
+}
+.ayui-row-justify-space-around{
+	justify-content:space-around;
+}
+.ayui-row-align-flex-start{
+	align-items:flex-start;
+}
+.ayui-row-align-center{
+	align-items:center;
+}
+.ayui-row-align-flex-end{
+	align-items:flex-end;
+}
+.ayui-row-flex-wrap{
+	flex-wrap:wrap;
+}
+.ayui-row-flex-nowrap{
+	flex-wrap:nowrap;
+}
+.ayui-row-flex-reverse{
+	flex-wrap:wrap-reverse;
+}

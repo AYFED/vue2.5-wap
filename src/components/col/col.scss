@@ -1,0 +1,24 @@
+
+.ayui-row-flex{
+	display: flex;
+	&:after{
+		display:none;
+	}
+	.ayui-col{
+		float: none;
+	}
+}
+.ayui-col{
+	float: left;
+	box-sizing: border-box;
+}
+
+@for $i from 1 through 24 {
+    .ayui-col-offset-#{$i} {
+        margin-left: 100/24*$i*1%;
+    }
+
+	.ayui-col-#{$i}{
+		width: 100/24*$i*1%;
+	}
+}
